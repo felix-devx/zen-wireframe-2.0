@@ -1,0 +1,161 @@
+/* === BORDER === */
+
+/* === OUTER BROWSER BORDER FIX === */
+/* Force zero border-radius on all possible browser container elements */
+:root,
+#main-window,
+#navigator-toolbox,
+#titlebar,
+#TabsToolbar,
+.browserContainer,
+#appcontent,
+#browser,
+.browserSidebarContainer,
+#zen-tabbox-wrapper,
+#zen-appcontent-wrapper,
+body,
+body > hbox,
+#zen-main-app {
+  border-radius: 0px !important;
+ border-radius: 0 !important;
+}
+
+/* Specifically target the outermost window elements */
+window,
+#main-window,
+:root[sizemode="normal"],
+:root[sizemode="maximized"] {
+  border-radius: 0px !important;
+  border-radius: 0 !important;
+}
+
+/* Override any potential vendor-specific prefixes */
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+}
+
+/* Ensure the main browser area has sharp corners */
+#browser {
+  border-radius: 0px !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+body > hbox {
+  border-radius: 0px !important;
+  background: var(--na-color-bg) !important;
+}
+
+#browser {
+  overflow: clip !important;
+  background: var(--na-color-zero) !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* window border on maximize */
+:root[sizemode="maximized"] #browser {
+  border: 2px solid var(--na-color-border) !important;
+}
+
+/* window border on minimize */
+:root:not([sizemode="maximized"]) #browser {
+  border: 2px solid var(--na-color-border) !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  outline-offset: 0px !important;
+}
+
+/* Ensure all browser elements have squared corners */
+:root #browser,
+:root #browser *,
+:root body,
+:root body * {
+  border-radius: 0px !important;
+}
+
+/* window border on spit tabs */
+:root:has(#tabbrowser-tabpanels [zen-split]) .deck-selected {
+  border-radius: 0px !important;
+  border: 2px solid var(--na-color-border) !important;
+}
+
+:root:has(#tabbrowser-tabpanels [zen-split]) .browserSidebarContainer {
+  border-radius: 0px !important;
+}
+
+/* content window border radius */
+.browserSidebarContainer {
+  border-radius: 0px !important;
+}
+
+/* content window border size on RIGHT side tabbar */
+:root[zen-right-side="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
+  margin-top: var(--na-window-margin) !important;
+  margin-left: var(--na-window-margin) !important;
+  border: 1px solid var(--na-color-border) !important;
+  border-radius: var(--na-border-radius) !important;
+}
+
+/* content window border size on LEFT side tabbar */
+:root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
+  margin-top: var(--na-window-margin) !important;
+  margin-right: var(--na-window-margin) !important;
+  border: 1px solid var(--na-color-border) !important;
+  border-radius: var(--na-border-radius) !important;
+}
+
+/* remove content window border on split tabs*/
+:root:has(#tabbrowser-tabpanels [zen-split]) #zen-tabbox-wrapper {
+  border: none !important;
+}
+
+/* content window bottom margin on SINGLE-TOOLBAR mode */
+@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+  :root[zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
+    margin-bottom: var(--na-window-margin) !important;
+  }
+}
+
+/* content window + address bar */
+#zen-appcontent-wrapper {
+  background-color: var(--na-color-bg) !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* window */
+#zen-tabbox-wrapper {
+ box-shadow: none !important;
+  background-color: var(--na-color-bg) !important;
+  overflow: clip !important;
+  margin: 0px !important;
+ padding: 0px !important;
+ border-radius: 0px !important;
+}
+
+@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+  :root:has(#tabbrowser-tabpanels [zen-split])[zen-compact-mode="true"][zen-sidebar-expanded="true"] #zen-tabbox-wrapper {
+    margin: var(--na-window-margin) !important;
+ }
+
+  :root:has(#tabbrowser-tabpanels [zen-split])[zen-compact-mode="true"]:not([zen-sidebar-expanded="true"]) #zen-tabbox-wrapper {
+    margin-inline: var(--na-window-margin) !important;
+    margin-top: var(--na-window-margin) !important;
+    margin-bottom: 0px !important;
+ }
+}
+
+@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+  :root:has(#tabbrowser-tabpanels [zen-split])[zen-compact-mode="true"] #zen-tabbox-wrapper {
+    margin: var(--na-window-margin) !important;
+  }
+}
+
+:root[zen-compact-mode="true"] #zen-tabbox-wrapper {
+  border-bottom: 1px solid var(--na-color-border) !important;
+}

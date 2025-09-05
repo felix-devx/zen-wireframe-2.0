@@ -1,0 +1,271 @@
+/* === SIDEBAR === */
+
+/* === SIDEBAR - SINGLE TOOLBAR === */
+
+@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+  :root[zen-sidebar-expanded="true"] {
+    /* hide bottom navbar on expanded single-toolbar mode */
+    #zen-appcontent-navbar-container {
+      opacity: 0 !important;
+      margin-block: -4px !important;
+      transition: margin-block var(--na-anim-duration) normal !important;
+    }
+
+    :has(#customization-content-container:hover),
+    :has(toolbarpaletteitem:active),
+    :has(#zen-appcontent-navbar-container:hover) #zen-appcontent-navbar-container {
+      opacity: 1 !important;
+      margin-block: 0px !important;
+    }
+
+    /* auto hide top sidebar toolbar except menu button */
+    /* #zen-sidebar-top-buttons>#zen-sidebar-top-buttons-customization-target>*:nth-child(n+2) {
+      opacity: 0 !important;
+      transition: opacity var(--na-anim-duration) normal !important;
+    }
+
+    :has(#zen-sidebar-top-buttons:hover) #zen-sidebar-top-buttons-customization-target>* {
+      opacity: 1 !important;
+    } */
+
+    /* move sidebar navbar to bottom */
+    #nav-bar {
+      order: 1 !important;
+      margin-bottom: 10px !important;
+    }
+
+    [zen-compact-mode="true"] {
+      /* sidebar margin on single-toolbar mode */
+      #nav-bar {
+        margin-bottom: 4px !important;
+      }
+
+      #navigator-toolbox {
+        margin-bottom: 16px !important;
+      }
+
+      /* move the navbar out from sidebar so url can have the same bahavior as other toolbar mode */
+      #urlbar-container:has(#urlbar[open]) {
+        position: fixed !important;
+        background-color: var(--na-color-text) !important;
+        top: auto !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        bottom: 0px !important;
+        left: 0px !important;
+        z-index: 10000 !important;
+      }
+    }
+  }
+
+  /* urlbar behavior on expanded single-toolbar mode*/
+    :root:not([zen-right-side="true"])[zen-sidebar-expanded="true"][zen-compact-mode="true"] {
+      #urlbar-container:has(#urlbar[open]) {
+        left: 0 !important;
+        right: auto !important;
+        margin-inline: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"])[zen-user-show] #urlbar-container:hover {
+        margin-left: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"]):not([zen-user-show]) #urlbar {
+        margin-left: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"]):not([zen-user-show])[zen-has-hover] #urlbar:not(:hover) {
+        margin-left: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
+        margin-left: 0px !important;
+      }
+    }
+  
+    :root[zen-right-side="true"][zen-sidebar-expanded="true"][zen-compact-mode="true"] {
+      #urlbar-container:has(#urlbar[open]) {
+        left: auto !important;
+        right: 0 !important;
+        margin-inline: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"])[zen-user-show] #urlbar-container:hover {
+        margin-right: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"]):not([zen-user-show]) #urlbar {
+        margin-right: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[zen-floating-urlbar="true"]):not([zen-user-show])[zen-has-hover] #urlbar:not(:hover) {
+        margin-right: 0px !important;
+      }
+  
+      #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
+        margin-right: 0px !important;
+      }
+    }
+}
+
+/* expanded urlbar */
+#urlbar {
+  top: auto !important;
+}
+
+#urlbar[open] {
+  min-width: var(--na-urlbar-width) !important;
+  max-width: var(--na-urlbar-width) !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  bottom: 62.5px !important;
+}
+
+/* move urlbar input to bottom*/
+#urlbar>.urlbar-input-container {
+  order: 1 !important;
+}
+
+/* navbar padding */
+.urlbar-input-container {
+  padding-inline: 2px !important;
+}
+
+/* === SIDEBAR - MULTIPLE TOOLBAR === */
+
+/* docked sidebar */
+:root:not([zen-compact-mode="true"]) #navigator-toolbox {
+  background: var(--na-color-bg) !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+:root:not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) #navigator-toolbox {
+ min-width: 50px !important;
+}
+
+/* floating sidebar */
+:root[zen-compact-mode="true"] #navigator-toolbox {
+  margin: 0px !important;
+ padding-inline: 20px !important;
+  margin-top: 20px !important;
+  margin-bottom: 54px !important;
+}
+
+:root[zen-compact-mode="true"]:not([zen-sidebar-expanded="true"]) #navigator-toolbox {
+  min-width: 90px !important;
+}
+
+/* expanded docked sidebar LEFT side mode */
+:root:not([zen-right-side])[zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]) #navigator-toolbox {
+ background: var(--na-color-bg) !important;
+  padding-right: 4px !important;
+  padding-left: 8px !important;
+  padding-top: 5px !important;
+}
+
+/* expanded docked sidebar RIGHT side mode */
+:root[zen-right-side][zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]) #navigator-toolbox {
+  background: var(--na-color-bg) !important;
+  padding-right: 8px !important;
+  padding-left: 4px !important;
+  padding-top: 5px !important;
+}
+
+:root:not([zen-sidebar-expanded="true"]) #zen-sidebar-top-buttons {
+  margin-bottom: 6px !important;
+}
+
+/* expanded floating sidebar */
+:root[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+  padding-right: 6px !important;
+ padding-left: 6px !important;
+}
+
+/* sidebar content */
+#titlebar {
+  background: var(--na-color-bg) !important;
+  padding-inline: 0px !important;
+ padding-top: 3px !important;
+ padding-bottom: 3px !important;
+  border-radius: var(--na-border-radius) !important;
+}
+
+:root[zen-compact-mode="true"] #titlebar {
+  border: 1px solid var(--na-color-border) !important;
+  border-color: var(--na-color-border) !important;
+}
+
+#zen-browser-tabs-wrapper stack {
+  margin-block: 1px !important;
+}
+
+/* tabs hover animation */
+.tabbrowser-tab:hover .tab-label-container,
+.tabbrowser-tab:hover .tab-icon-stack {
+  animation: slideUpAdressBar var(--na-anim-duration) ease;
+}
+
+/* focused tab */
+.tabbrowser-tab[selected]:not([zen-essential]) label {
+  color: var(--na-color-bg) !important;
+}
+
+/* invert selected tab icon color */
+.tabbrowser-tab[selected] .tab-reset-button,
+.tabbrowser-tab[selected] .tab-close-button,
+.tabbrowser-tab[selected]:not([zen-essential]) img {
+  filter: invert(10%) sepia(100%) brightness(120%) contrast(100%);
+}
+
+.tab-background { border-radius: var(--na-border-radius) !important; }
+
+/* selected tab background */
+.tabbrowser-tab[selected]:not([zen-essential])>stack>vbox {
+  background: var(--na-color-text) !important;
+}
+
+/* unfocused tabs */
+.tabbrowser-tab {
+  color: var(--na-color-text) !important;
+}
+
+/* tabs padding */
+.tab-content {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+/* workspace hover */
+:root[zen-sidebar-expanded="true"] #zen-current-workspace-indicator:hover::before {
+  background: var(--na-color-text) !important;
+  border-radius: var(--na-border-radius) !important;
+}
+
+:root[zen-sidebar-expanded="true"] #zen-current-workspace-indicator:hover>#zen-current-workspace-indicator-name {
+  color: var(--na-color-bg) !important;
+}
+
+/* sidebar bottom icon padding and direction */
+#zen-sidebar-icons-wrapper {
+  padding-block: 4px !important;
+ padding-inline: 5px !important;
+}
+
+:root[zen-right-side] #zen-sidebar-icons-wrapper {
+  justify-content: flex-end !important;
+}
+
+:root:not([zen-right-side]) #zen-sidebar-icons-wrapper {
+  justify-content: flex-start !important;
+}
+
+#zen-sidebar-splitter {
+  background: var(--na-color-bg) !important;
+  opacity: 1 !important;
+}

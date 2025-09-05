@@ -1,0 +1,52 @@
+:root {
+  --na-border-radius: 0px !important;
+  --na-border-radius-small: 0px !important;
+  --na-window-margin: 10px;
+  --na-anim-duration: 0.3s;
+  --na-urlbar-width: 40vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
+  --zen-primary-color: rgba(247, 111, 83, 1) !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --na-color-text: rgb(30, 30, 31);
+    --na-color-bg: rgba(239, 233, 217, 1);
+    --na-color-text-second: rgba(30, 31, 0.25);
+    --na-color-bg-second: rgba(239, 233, 217, 0.25);
+    --na-color-border: rgba(0, 0, 0, 1);
+    --na-color-zero: rgba(0, 0, 0, 0);
+    --na-urlbar-bg: #00000011, #000000FF;
+ }
+
+  :root[privatebrowsingmode] {
+    --na-color-text: rgba(54, 20, 192, 1);
+    --na-color-bg: rgba(192, 180, 211, 1);
+    --na-color-text-second: rgba(54, 20, 192, 0.25);
+    --na-color-bg-second: rgba(192, 180, 211, 0.25);
+    --na-color-border: rgba(0, 0, 0, 1);
+    --na-color-zero: rgba(0, 0, 0, 0);
+    --na-urlbar-bg: #000011, #00011;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --na-color-text: rgba(209, 207, 192, 1);
+    --na-color-bg: rgba(30, 30, 31, 1);
+    --na-color-text-second: rgba(209, 207, 192, 0.25);
+    --na-color-bg-second: rgba(30, 31, 0.25);
+    --na-color-border: rgba(209, 207, 192, 1);
+    --na-color-zero: rgba(0, 0, 0, 0);
+    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+ }
+
+  :root[privatebrowsingmode] {
+    --na-color-text: rgba(192, 180, 211, 1);
+    --na-color-bg: rgba(54, 20, 192, 1);
+    --na-color-text-second: rgba(192, 180, 211, 0.25);
+    --na-color-bg-second: rgba(54, 20, 192, 0.25);
+    --na-color-border: rgba(209, 207, 192, 1);
+    --na-color-zero: rgba(0, 0, 0);
+    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+  }
+}

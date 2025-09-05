@@ -1,0 +1,36 @@
+{
+  "manifest_version": "1",
+  "name": "Wireframe",
+  "description": "A minimal, squared-off theme for Zen Browser",
+  "version": "1.0.0",
+  "author": "sehaz",
+  "preferences": {
+    "zen.view.use-single-toolbar": {
+      "type": "boolean",
+      "default": false,
+      "description": "Use single toolbar layout"
+    },
+    "wireframe.animations.enabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable animations in Wireframe theme"
+    },
+    "wireframe.borders.squared": {
+      "type": "boolean",
+      "default": true,
+      "description": "Use squared borders"
+    },
+    "wireframe.urlbar.position": {
+      "type": "string",
+      "default": "center",
+      "enum": ["center", "top", "bottom"],
+      "description": "Position of the URL bar"
+    },
+    "wireframe.colorscheme": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"],
+      "description": "Color scheme for the theme"
+    }
+  }
+}
