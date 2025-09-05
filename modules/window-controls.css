@@ -27,6 +27,10 @@
 }
 
 .titlebar-min {
+  order: 1 !important;
+}
+
+.titlebar-min {
   /* background-color: #FDC92D !important;*/
   background-color: var(--zen-toolbar-element-bg) !important;
   content: none !important;
