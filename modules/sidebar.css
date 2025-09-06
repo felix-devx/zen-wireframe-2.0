@@ -142,7 +142,7 @@
   #titlebar,
   #TabsToolbar-customization-target {
     flex-direction: column;
-    height: 100%; /* Make sure they take up full height */
+    height: 100%;
     margin-bottom: 2px !important; /* to match bottombar */
   }
 
@@ -151,6 +151,12 @@
   background: var(--na-color-bg) !important;
   padding: 0px !important;
   margin: 0px !important;
+}
+
+:root[zen-compact-mode="true"] #navigator-toolbox {
+  height: calc(100% - 10px) !important;
+  margin-top: 10px !important;
+  
 }
 
 :root:not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) #navigator-toolbox {
@@ -185,7 +191,7 @@
 /* expanded floating sidebar */
 :root[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
   padding-right: 6px !important;
- padding-left: 6px !important;
+  padding-left: 6px !important;
 }
 
 /* sidebar content */
