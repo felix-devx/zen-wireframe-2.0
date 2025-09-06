@@ -5,6 +5,10 @@
 flex-direction: column-reverse;
 }
 
+#zen-appcontent-navbar-wrapper{
+  margin-right: 10px !important;
+}
+
 #zen-appcontent-navbar-container {
   border: 0px solid var(--na-color-border) !important;
   border-radius: 0px !important;
@@ -13,6 +17,7 @@ flex-direction: column-reverse;
   padding-block: 1px !important;
   padding-inline: 10px !important;
   margin-left: 0px !important;
+  margin-right: 10px !important;
   transition: padding-inline 0.3s normal;
   order: 1 !important;
 }
@@ -312,21 +317,21 @@ flex-direction: column-reverse;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-action {
-  padding-inline: 6px !important;
- border-radius: var(--na-border-radius-small) !important;
+  padding: 4px !important;
+  border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-bg-second) !important;
-  color: var(--na-color-bg) !important;
+  color: var(--na-color-text) !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row:hover .urlbarView-action {
-  padding-inline: 6px !important;
+  padding: 4px !important;
   border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-text-second) !important;
   color: var(--na-color-text) !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row .urlbarView-action {
-  padding-inline: 6px !important;
+  padding: 4px !important;
   border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-text-second) !important;
   color: var(--na-color-text) !important;
