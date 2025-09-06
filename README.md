@@ -32,7 +32,8 @@ The theme includes several customizable preferences that can be adjusted through
 - `zen.view.use-single-toolbar` - Use single toolbar layout
 - `wireframe.animations.enabled` - Enable animations in Wireframe theme
 - `wireframe.borders.squared` - Use squared borders
-- `wireframe.urlbar.position` - Position of the URL bar
+- `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
+- `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
 - `wireframe.colorscheme` - Color scheme for the theme
 
 ## Using the Theme

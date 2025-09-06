@@ -20,11 +20,15 @@
       "default": true,
       "description": "Use squared borders"
     },
-    "wireframe.urlbar.position": {
+    "wireframe.urlbar.position.top": {
+      "type": "boolean",
+      "default": false,
+      "description": "Position URL bar at the top (for multiple and collapsed toolbar only)"
+    },
+    "wireframe.webview.border_radius": {
       "type": "string",
-      "default": "center",
-      "enum": ["center", "top", "bottom"],
-      "description": "Position of the URL bar"
+      "default": "0px",
+      "description": "Border radius for webview (e.g., 0px, 4px, 8px, 12px)"
     },
     "wireframe.colorscheme": {
       "type": "string",
