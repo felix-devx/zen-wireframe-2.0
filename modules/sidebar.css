@@ -137,6 +137,15 @@
 
 /* === SIDEBAR - MULTIPLE TOOLBAR === */
 
+  #tabbrowser-tabs,
+  #TabsToolbar,
+  #titlebar,
+  #TabsToolbar-customization-target {
+    flex-direction: column;
+    height: 100%; /* Make sure they take up full height */
+    margin-bottom: 2px !important; /* to match bottombar */
+  }
+
 /* docked sidebar */
 :root:not([zen-compact-mode="true"]) #navigator-toolbox {
   background: var(--na-color-bg) !important;
