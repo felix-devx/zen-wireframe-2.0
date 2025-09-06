@@ -35,16 +35,16 @@ flex-direction: column-reverse;
 }
 
 /* show bottombar elements on hover */
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
+/* :root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container {
-/*   margin-left: 10px !important;
-  padding-inline: 0px !important; */
-}
+  margin-left: 10px !important;
+  padding-inline: 0px !important;
+} */
 
 :root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
 :root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
