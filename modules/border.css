@@ -29,13 +29,6 @@ window,
   border-radius: 0 !important;
 }
 
-/* Override any potential vendor-specific prefixes */
-* {
-  border-radius: 0 !important;
-  -moz-border-radius: 0px !important;
-  -webkit-border-radius: 0px !important;
-}
-
 /* Ensure the main browser area has sharp corners */
 #browser {
   border-radius: 0px !important;
