@@ -1,6 +1,10 @@
 /* === BOTTOMBAR === */
 
 /* bottombar */
+#zen-appcontent-wrapper {
+flex-direction: column-reverse;
+}
+
 #zen-appcontent-navbar-container {
   border: 0px solid var(--na-color-border) !important;
   border-radius: 0px !important;
@@ -15,19 +19,19 @@
 
 /* hide bottombar elements */
 #zen-appcontent-navbar-container #identity-box {
-  visibility: collapse !important;
+  visibility: visible !important;
 }
 
 #zen-appcontent-navbar-container #page-action-buttons {
-  visibility: collapse !important;
+  visibility: visible !important;
 }
 
 #zen-appcontent-navbar-container #tracking-protection-icon-container {
-  visibility: collapse !important;
+  visibility: visible !important;
 }
 
 #zen-appcontent-navbar-container .toolbarbutton-1 {
-  visibility: collapse !important;
+  visibility: visible !important;
 }
 
 /* show bottombar elements on hover */
@@ -38,8 +42,8 @@
 :root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container {
-  margin-left: 10px !important;
-  padding-inline: 0px !important;
+/*   margin-left: 10px !important;
+  padding-inline: 0px !important; */
 }
 
 :root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
@@ -191,7 +195,7 @@
   font-size: 1em !important;
   height: fit-content !important;
   padding-inline: 2px !important;
- padding-block: 2px !important;
+  padding-block: 2px !important;
   color: var(--na-color-text) !important;
 }
 
