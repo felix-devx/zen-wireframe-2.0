@@ -87,16 +87,12 @@ body > hbox {
 
 /* content window border size on RIGHT side tabbar */
 :root[zen-right-side="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
-  margin-top: var(--na-window-margin) !important;
-  margin-left: var(--na-window-margin) !important;
   border: 1px solid var(--na-color-border) !important;
   border-radius: var(--na-border-radius) !important;
 }
 
 /* content window border size on LEFT side tabbar */
 :root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
-  margin-top: var(--na-window-margin) !important;
-  margin-right: var(--na-window-margin) !important;
   border: 1px solid var(--na-color-border) !important;
   border-radius: var(--na-border-radius) !important;
 }
@@ -126,9 +122,17 @@ body > hbox {
  box-shadow: none !important;
   background-color: var(--na-color-bg) !important;
   overflow: clip !important;
-  margin: 0px !important;
  padding: 0px !important;
  border-radius: 0px !important;
+}
+
+/* Apply the user-defined border radius */
+:root[zen-right-side="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
+  border-radius: var(--na-user-border-radius) !important;
+}
+
+:root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
+  border-radius: var(--na-user-border-radius) !important;
 }
 
 @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
@@ -151,4 +155,42 @@ body > hbox {
 
 :root[zen-compact-mode="true"] #zen-tabbox-wrapper {
   border-bottom: 1px solid var(--na-color-border) !important;
+  margin: 0px !important;
+}
+
+/* User-defined border radius preferences */
+@media (-moz-pref("wireframe.webview.border_radius", 0)) {
+  :root {
+    --na-user-border-radius: 0px;
+  }
+}
+
+@media (-moz-pref("wireframe.webview.border_radius", 4)) {
+  :root {
+    --na-user-border-radius: 4px;
+  }
+}
+
+@media (-moz-pref("wireframe.webview.border_radius", 8)) {
+  :root {
+    --na-user-border-radius: 8px;
+  }
+}
+
+@media (-moz-pref("wireframe.webview.border_radius", 12)) {
+  :root {
+    --na-user-border-radius: 12px;
+  }
+}
+
+@media (-moz-pref("wireframe.webview.border_radius", 16)) {
+  :root {
+    --na-user-border-radius: 16px;
+  }
+}
+
+@media (-moz-pref("wireframe.webview.border_radius", 20)) {
+  :root {
+    --na-user-border-radius: 20px;
+  }
 }

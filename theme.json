@@ -1,0 +1,18 @@
+{
+  "id": "wireframe-theme-1.0.0",
+  "js": false,
+  "name": "Wireframe",
+  "description": "A minimal, squared-off theme for Zen Browser",
+  "homepage": "https://github.com/sehajveersingh2005/zen-wireframe-2.0",
+  "preferences": "preferences.json",
+  "readme": "README.md",
+  "author": "sehaz",
+  "version": "1.0.0",
+  "tags": [
+    "Theme",
+    "Minimal",
+    "Squared",
+    "Wireframe"
+  ],
+  "fork": ["zen"]
+}
