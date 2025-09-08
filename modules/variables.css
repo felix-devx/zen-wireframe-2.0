@@ -8,7 +8,27 @@
   --zen-primary-color: rgba(247, 111, 83, 1) !important;
 }
 
-@media (prefers-color-scheme: light) {
+:root {
+    --na-color-text: rgba(209, 207, 192, 1);
+    --na-color-bg: rgba(30, 30, 31, 1);
+    --na-color-text-second: rgba(209, 207, 192, 0.25);
+    --na-color-bg-second: rgba(30, 31, 0.25);
+    --na-color-border: rgba(209, 207, 192, 1);
+    --na-color-zero: rgba(0, 0, 0, 0);
+    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+}
+
+:root[privatebrowsingmode] {
+    --na-color-text: rgba(192, 180, 211, 1);
+    --na-color-bg: rgba(54, 20, 192, 1);
+    --na-color-text-second: rgba(192, 180, 211, 0.25);
+    --na-color-bg-second: rgba(54, 20, 192, 0.25);
+    --na-color-border: rgba(209, 207, 192, 1);
+    --na-color-zero: rgba(0, 0, 0);
+    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+  }
+
+@media (-moz-pref("wireframe.theme", 0)) {
   :root {
     --na-color-text: rgb(30, 30, 31);
     --na-color-bg: rgba(239, 233, 217, 1);
@@ -30,7 +50,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (-moz-pref("wireframe.theme", 1)) {
   :root {
     --na-color-text: rgba(209, 207, 192, 1);
     --na-color-bg: rgba(30, 30, 31, 1);

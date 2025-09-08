@@ -93,17 +93,18 @@
     "type": "separator"
   },
   {
-    "property": "wireframe.colorscheme",
-    "label": "Color scheme for the theme",
     "type": "dropdown",
-    "default": "light",
+    "property": "wireframe.theme",
+    "label": "Theme toggle for wireframe",
+    "value": "number",
+    "default": 0,
     "options": [
       {
-        "value": "light",
+        "value": 0,
         "label": "Light"
       },
       {
-        "value": "dark",
+        "value": 1,
         "label": "Dark"
       }
     ]
