@@ -34,34 +34,6 @@ The theme includes several customizable preferences that can be adjusted through
 - `wireframe.borders.squared` - Use squared borders
 - `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
 - `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
-- `wireframe.colorscheme` - Color scheme for the theme
-
-## Using the Theme
-
-The Wireframe theme automatically adapts to your system's preferred color scheme:
-
-- When your system is set to light mode, the theme will use the light color scheme
-- When your system is set to dark mode, the theme will use the dark color scheme
-
-To switch between light and dark themes, change your system's preferred color scheme:
-
-### Windows:
-1. Open Settings
-2. Go to Personalization > Colors
-3. Under "Choose your color", select "Light" or "Dark"
-
-### macOS:
-1. Open System Preferences
-2. Go to General
-3. Under "Appearance", select "Light" or "Dark"
-
-### Linux:
-The method varies by distribution and desktop environment, but generally:
-1. Open System Settings
-2. Look for Appearance or Theme settings
-3. Select light or dark theme
-
-After changing your system's preferred color scheme, restart Zen Browser for the changes to take effect.
 
 ## Contributing
 

@@ -16,7 +16,7 @@
   min-width: 14px !important;
   align-self: center;
   margin-right: 9px !important;
- border-radius: 0px !important;
+  border-radius: 0px !important;
   border: 0px solid rgb(0 0 0 / 10%);
   transition: all 100ms;
 }
@@ -35,7 +35,7 @@
   background-color: var(--zen-toolbar-element-bg) !important;
   content: none !important;
   scale: 1 !important;
-  border: 1.1px solid var(--zen-toolbar-element-bg) !important;
+  border: 1px solid var(--na-color-border) !
   /*border: 0px solid #8B8000 !important;*/
 }
 

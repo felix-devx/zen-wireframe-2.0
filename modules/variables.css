@@ -2,20 +2,19 @@
   --na-border-radius: 0px !important;
   --na-border-radius-small: 0px !important;
   --na-user-border-radius: 0px; /* This will be controlled by the preference */
-  --na-window-margin: 10px;
+  --na-window-margin: 10px !important;
   --na-anim-duration: 0.3s;
   --na-urlbar-width: 40vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
-  --zen-primary-color: rgba(247, 111, 83, 1) !important;
 }
 
 :root {
-    --na-color-text: rgba(209, 207, 192, 1);
-    --na-color-bg: rgba(30, 30, 31, 1);
-    --na-color-text-second: rgba(209, 207, 192, 0.25);
-    --na-color-bg-second: rgba(30, 31, 0.25);
-    --na-color-border: rgba(209, 207, 192, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+    --na-color-text: light-dark(rgba(30, 30, 31,1), rgba(209, 207, 192, 1));
+    --na-color-bg: light-dark(rgba(239, 233, 217, 1), rgba(30, 30, 31, 1));
+    --na-color-text-second: light-dark(rgba(30, 30, 31, 0.25), rgba(209, 207, 192, 0.25));
+    --na-color-bg-second: var(--zen-colors-secondary) !important;
+    --na-color-zero: rgba(0, 0, 0, 0); 
+    --na-urlbar-bg: light-dark((#00000011, #000000FF),(#f3f0e611, #f3f0e6FF)) !important;
+    --na-color-border: light-dark(rgba(0, 0, 0, 1),rgba(209, 207, 192, 1)) !important;
 }
 
 :root[privatebrowsingmode] {
@@ -26,6 +25,7 @@
     --na-color-border: rgba(209, 207, 192, 1);
     --na-color-zero: rgba(0, 0, 0);
     --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+    --na-color-border: light-dark(rgba(0, 0, 0, 1),rgba(209, 207, 192, 1)) !important;
   }
 
 @media (-moz-pref("wireframe.theme", 0)) {

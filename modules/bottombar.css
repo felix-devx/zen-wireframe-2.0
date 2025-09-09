@@ -10,7 +10,7 @@
   border: 0px solid var(--na-color-border) !important;
   border-radius: 0px !important;
   border-color: var(--na-color-border) !important;
-  background-color: var(--na-color-bg) !important;
+/*   background-color: var(--na-color-bg) !important; */
   margin-left: 0px !important;
   margin-right: 10px !important;
   transition: padding-inline 0.3s normal;
@@ -95,7 +95,7 @@
 #urlbar[breakout-extend] :root:has(.urlbar-page-action[open]) #urlbar-background,
 #urlbar[breakout-extend] #urlbar-background,
 #urlbar[breakout-extend] #urlbar-container {
-  background-color: var(--na-color-bg) !important;
+  background-color: var(--zen-primary-color) !important;
   border: 1px solid var(--na-color-border) !important;
 }
 
@@ -340,24 +340,24 @@
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-action {
-  padding: 4px !important;
   border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-bg-second) !important;
   color: var(--na-color-text) !important;
+  padding-inline: 6px !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row:hover .urlbarView-action {
-  padding: 4px !important;
   border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-text-second) !important;
-  color: var(--na-color-text) !important;
+  color: var(--na-color-bg) !important;
+  padding-inline: 6px !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row .urlbarView-action {
-  padding: 4px !important;
   border-radius: var(--na-border-radius-small) !important;
   background-color: var(--na-color-text-second) !important;
   color: var(--na-color-text) !important;
+  padding-inline: 6px !important;
 }
 
 /* urlbar search engine and bookmark search mode */

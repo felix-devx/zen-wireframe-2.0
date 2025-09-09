@@ -148,7 +148,7 @@
 
 /* docked sidebar */
 :root:not([zen-compact-mode="true"]) #navigator-toolbox {
-  background: var(--na-color-bg) !important;
+  /* background: var(--na-color-bg) !important; */
   padding: 0px !important;
   margin: 0px !important;
 }
@@ -170,7 +170,7 @@
 
 /* expanded docked sidebar LEFT side mode */
 :root:not([zen-right-side])[zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]) #navigator-toolbox {
- background: var(--na-color-bg) !important;
+ /* background: var(--na-color-bg) !important; */
   padding-right: 4px !important;
   padding-left: 8px !important;
   padding-top: 5px !important;
@@ -178,7 +178,7 @@
 
 /* expanded docked sidebar RIGHT side mode */
 :root[zen-right-side][zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]) #navigator-toolbox {
-  background: var(--na-color-bg) !important;
+  /* background: var(--na-color-bg) !important; */
   padding-right: 8px !important;
   padding-left: 4px !important;
   padding-top: 5px !important;
@@ -196,10 +196,10 @@
 
 /* sidebar content */
 #titlebar {
-  background: var(--na-color-bg) !important;
+  /* background: var(--na-color-bg) !important; */
   padding-inline: 0px !important;
- padding-top: 3px !important;
- padding-bottom: 3px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
   border-radius: var(--na-border-radius) !important;
 }
 
@@ -261,7 +261,7 @@
 /* sidebar bottom icon padding and direction */
 #zen-sidebar-icons-wrapper {
   padding-block: 4px !important;
- padding-inline: 5px !important;
+  padding-inline: 5px !important;
 }
 
 :root[zen-right-side] #zen-sidebar-icons-wrapper {
@@ -273,6 +273,6 @@
 }
 
 #zen-sidebar-splitter {
-  background: var(--na-color-bg) !important;
+  /* background: var(--na-color-bg) !important; */
   opacity: 1 !important;
 }

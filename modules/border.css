@@ -38,12 +38,12 @@ window,
 
 body > hbox {
   border-radius: 0px !important;
-  background: var(--na-color-bg) !important;
+  /* background: var(--na-color-bg) !important; */
 }
 
 #browser {
   overflow: clip !important;
-  background: var(--na-color-zero) !important;
+  /* background: var(--na-color-zero) !important; */
   border-radius: 0px !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -67,7 +67,7 @@ body > hbox {
 :root #browser *,
 :root body,
 :root body * {
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 /* window border on spit tabs */
@@ -111,7 +111,7 @@ body > hbox {
 
 /* content window + address bar */
 #zen-appcontent-wrapper {
-  background-color: var(--na-color-bg) !important;
+  /* background-color: var(--na-color-bg) !important; */
   border-radius: 0px !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -120,7 +120,7 @@ body > hbox {
 /* window */
 #zen-tabbox-wrapper {
  box-shadow: none !important;
-  background-color: var(--na-color-bg) !important;
+  /* background-color: var(--na-color-bg) !important; */
   overflow: clip !important;
  padding: 0px !important;
  border-radius: 0px !important;
