@@ -87,13 +87,13 @@ body > hbox {
 
 /* content window border size on RIGHT side tabbar */
 :root[zen-right-side="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
-  border: 1px solid var(--na-color-border) !important;
+  border: 2px solid var(--na-color-border) !important;
   border-radius: var(--na-border-radius) !important;
 }
 
 /* content window border size on LEFT side tabbar */
 :root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
-  border: 1px solid var(--na-color-border) !important;
+  border: 2px solid var(--na-color-border) !important;
   border-radius: var(--na-border-radius) !important;
 }
 
