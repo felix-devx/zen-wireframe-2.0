@@ -261,12 +261,14 @@
   :root[zen-right-side="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
     margin-top: var(--na-window-margin) !important;
     margin-left: var(--na-window-margin) !important;
+    margin-right: var(--na-window-margin) !important;
     margin-bottom: 0px !important;
   }
 
   :root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
     margin-top: var(--na-window-margin) !important;
     margin-left: var(--na-window-margin) !important;
+    margin-right: var(--na-window-margin) !important;
     margin-bottom: 0px !important;
   }
 }
