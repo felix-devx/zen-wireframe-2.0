@@ -1,8 +1,8 @@
 :root {
   --na-border-radius: 0px !important;
   --na-border-radius-small: 0px !important;
-  --na-user-border-radius: 0px; /* This will be controlled by the preference */
-  --na-window-margin: 10px !important;
+  --na-user-border-radius: 16px; /* This will be controlled by the preference */
+  --na-window-margin: 12px !important;
   --na-anim-duration: 0.3s;
   --na-urlbar-width: 40vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
 }

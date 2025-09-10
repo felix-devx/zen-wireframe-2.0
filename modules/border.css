@@ -45,7 +45,7 @@ body > hbox {
   overflow: clip !important;
   /* background: var(--na-color-zero) !important; */
   border-radius: 0px !important;
-  margin: 0px !important;
+/*   margin: 0px !important; */
   padding: 0px !important;
 }
 
@@ -113,7 +113,7 @@ body > hbox {
 #zen-appcontent-wrapper {
   /* background-color: var(--na-color-bg) !important; */
   border-radius: 0px !important;
-  margin: 0px !important;
+/*   margin: 0px !important; */
   padding: 0px !important;
 }
 

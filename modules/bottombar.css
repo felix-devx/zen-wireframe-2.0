@@ -10,7 +10,6 @@
   border: 0px solid var(--na-color-border) !important;
   border-radius: 0px !important;
   border-color: var(--na-color-border) !important;
-/*   background-color: var(--na-color-bg) !important; */
   margin-left: 0px !important;
   margin-right: 10px !important;
   transition: padding-inline 0.3s normal;
@@ -131,7 +130,7 @@
 /* splitter for urlbar input */
 .urlbarView-body-inner {
   border-top: none !important;
-  border-bottom: 1px solid var(--na-color-text) !important;
+  border-bottom: 1px solid var(--na-color-border) !important;
 }
 
 /* urlbar loading text */
@@ -152,7 +151,7 @@
 }
 
 #main-window:has(.tabbrowser-tab[selected][busy]) #urlbar:not([breakout-extend]) .urlbar-input-container>.urlbar-input-box>input {
-  transition: opacity 0s ease;
+  transition: opacity 3s ease;
   opacity: 0 !important;
 }
 
@@ -171,7 +170,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--na-urlbar-bg));
+  background: linear-gradient(90deg, var(--zen-primary-color), var(--na-color-border));
   background-size: 200% 100%;
   animation: urlbar-loading 1s linear reverse;
   animation-play-state: paused;
@@ -196,7 +195,7 @@
   height: fit-content !important;
   padding-inline: 2px !important;
   padding-block: 2px !important;
-  color: var(--na-color-text) !important;
+  color: var(--zen-primary-text) !important;
 }
 
 #urlbar-container:has(#urlbar[breakout-extend]) #urlbar .urlbar-input,
@@ -277,7 +276,7 @@
   box-shadow: none !important;
   box-sizing: none !important;
   padding: 0px !important;
- margin: 0px !important;
+  margin: 0px !important;
   border: 0px !important;
 }
 

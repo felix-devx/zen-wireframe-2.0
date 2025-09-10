@@ -61,7 +61,7 @@
     "property": "wireframe.webview.border_radius",
     "label": "Border radius for webview",
     "value": "number",
-    "default": 0,
+    "default": 16,
     "options": [
       {
         "value": 0,
@@ -91,22 +91,5 @@
   },
   {
     "type": "separator"
-  },
-  {
-    "type": "dropdown",
-    "property": "wireframe.theme",
-    "label": "Theme toggle for wireframe",
-    "value": "number",
-    "default": 0,
-    "options": [
-      {
-        "value": 0,
-        "label": "Light"
-      },
-      {
-        "value": 1,
-        "label": "Dark"
-      }
-    ]
   }
 ]
