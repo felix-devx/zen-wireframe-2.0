@@ -172,7 +172,7 @@
   inset: 0;
   background: linear-gradient(90deg, var(--zen-primary-color), var(--na-color-border));
   background-size: 200% 100%;
-  animation: urlbar-loading 1s linear reverse;
+  animation: urlbar-loading 1s linear reverse infinite;
   animation-play-state: paused;
   opacity: 0;
   transition: opacity 0.3s;
