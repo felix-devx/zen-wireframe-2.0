@@ -15,11 +15,20 @@ A minimal, squared-off theme for Zen Browser that focuses on clean lines and eff
 2. Place them in your Zen Browser profile's chrome folder
 3. Restart Zen Browser
 
+## MicaForEveryone Setup (Windows 10/11)
+
+To achieve the clean squared-off window borders as shown in the theme screenshots, you can use MicaForEveryone:
+
+1. Download and install MicaForEveryone from [GitHub](https://github.com/MicaForEveryone/MicaForEveryone) or Microsoft Store
+2. Launch MicaForEveryone
+3. Click on "Add new rule" > Add process rule > type "zen" and add rule
+4. Choose corner preference "squared" from the dropdown
+
 ## Structure
 
 - `userChrome.css` - Main file that imports all modules
 - `modules/` - Directory containing modular CSS files
-- `zen-themes/preferences.json` - Theme preferences file
+- `preferences.json` - Theme preferences file
 
 ## Customization
 
@@ -29,11 +38,12 @@ You can customize the theme by modifying the variables in `modules/variables.css
 
 The theme includes several customizable preferences that can be adjusted through Zen Browser's preferences system:
 
-- `zen.view.use-single-toolbar` - Use single toolbar layout
 - `wireframe.animations.enabled` - Enable animations in Wireframe theme
 - `wireframe.borders.squared` - Use squared borders
 - `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
 - `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
+
+
 
 ## Contributing
 
