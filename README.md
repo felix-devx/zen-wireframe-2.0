@@ -2,6 +2,9 @@
 
 A minimal, squared-off theme for Zen Browser that focuses on clean lines and efficient use of space.
 
+<img width="1919" height="1079" alt="Screenshot 2025-09-09 235105" src="https://github.com/user-attachments/assets/4f83cbe9-b560-4431-b920-af76860a9bc9" />
+
+
 ## Features
 
 - Minimal design with squared-off elements
