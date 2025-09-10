@@ -95,7 +95,7 @@
 #urlbar[breakout-extend] #urlbar-background,
 #urlbar[breakout-extend] #urlbar-container {
   background-color: var(--zen-primary-color) !important;
-  border: 1px solid var(--na-color-border) !important;
+  border: 2px solid var(--na-color-border) !important;
 }
 
 /* urlbar border radius */
@@ -233,7 +233,7 @@
 
 #urlbar-container:has(#urlbar[breakout-extend]) .urlbarView-results div {
   margin: 0px !important;
- padding-block: 2px !important;
+  padding-block: 2px !important;
   padding-inline: 6px !important;
 }
 
@@ -310,20 +310,24 @@
   color: var(--na-color-text-second) !important;
 }
 
-.urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] {
+.urlbarView-body-inner:has(.urlbarView-row) .urlbarView-title{
+  color: var(--zen-primary-text) 100% invert !important;
+}
+
+/* .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] {
   border-radius: var(--na-border-radius) !important;
   background-color: var(--na-color-text) !important;
-}
+} */
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row:hover {
   border-radius: var(--na-border-radius) !important;
   background-color: var(--na-color-text-second) !important;
 }
 
-.urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-title {
+/* .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-title {
   animation: slideUpAdressBar var(--na-anim-duration) ease;
   color: var(--na-color-bg) !important;
-}
+} */
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-url {
   color: var(--na-color-bg-second) !important;
@@ -331,11 +335,11 @@
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row:hover .urlbarView-title {
   animation: slideUpAdressBar var(--na-anim-duration) ease;
-  color: var(--na-color-text) !important;
+  color: var(--na-color-bg) !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row:hover .urlbarView-url {
-  color: var(--na-color-text-second) !important;
+  color: var(--na-color-bg) !important;
 }
 
 .urlbarView-body-inner:has(.urlbarView-row[selected]) .urlbarView-row[selected] .urlbarView-action {
@@ -407,6 +411,6 @@
   padding-block: 4px !important;
   padding-left: 6px !important;
   padding-right: 2px !important;
-  color: var(--na-color-bg) !important;
+  color: var(--zen-primary-text) !important;
   background-color: var(--na-color-text) !important;
 }
