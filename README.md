@@ -1,9 +1,8 @@
-# Wireframe Theme for Zen Browser
+# Wireframe 2.0
 
 A minimal, squared-off theme for Zen Browser that focuses on clean lines and efficient use of space.
 
 <img width="1919" height="1079" alt="Screenshot 2025-09-09 235105" src="https://github.com/user-attachments/assets/4f83cbe9-b560-4431-b920-af76860a9bc9" />
-
 
 ## Features
 
@@ -26,6 +25,8 @@ To achieve the clean squared-off window borders as shown in the theme screenshot
 2. Launch MicaForEveryone
 3. Click on "Add new rule" > Add process rule > type "zen" and add rule
 4. Choose corner preference "squared" from the dropdown
+
+<img width="1148" height="794" alt="Screenshot 2025-09-10 105529" src="https://github.com/user-attachments/assets/5b80b051-30a6-4bac-91fd-a4a4c65799e7" />
 
 ## Structure
 
