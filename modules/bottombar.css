@@ -242,6 +242,9 @@
   :root[zen-sidebar-expanded="true"] #tracking-protection-icon-container {
     margin-left: 0px !important;
  }
+/*   #zen-appcontent-navbar-wrapper{
+    display: none !important;
+  } */
 }
 
 /* URL bar position preference - TOP */

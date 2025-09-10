@@ -13,11 +13,12 @@ This theme implements customizable preferences using Zen Browser's preference sy
 2. `wireframe.animations.enabled` - Enable animations in Wireframe theme
 3. `wireframe.borders.squared` - Use squared borders
 4. `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
+5. `wireframe.macos.controls` - Disable macOS style window controls
+6. `zen.view.experimental-force-window-controls-left` - Force window controls to the left (for macOS style controls only)
 
-### String Preferences
+### Dropdown Preferences
 
 1. `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
-2. `wireframe.colorscheme` - Color scheme for the theme (light/dark)
 
 ## How Preferences Work
 

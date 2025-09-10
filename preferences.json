@@ -51,7 +51,52 @@
     "property": "wireframe.urlbar.position.top",
     "label": "Position URL bar at the top (for multiple and collapsed toolbar only)",
     "default": false,
-    "type": "checkbox"
+    "type": "checkbox",
+    "value": "boolean"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "checkbox",
+    "property": "wireframe.macos.controls",
+    "label": "Disable macOS style window controls",
+    "value": "boolean",
+    "default": false
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.view.experimental-force-window-controls-left",
+    "label": "Force window controls to the left (for macOS style controls only)",
+    "value": "boolean",
+    "default": true
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "dropdown",
+    "property": "wireframe.color_scheme",
+    "label": "Color scheme",
+    "value": "string",
+    "default": "system",
+    "options": [
+      {
+        "value": "light",
+        "label": "Light"
+      },
+      {
+        "value": "dark",
+        "label": "Dark"
+      },
+      {
+        "value": "system",
+        "label": "System"
+      }
+    ]
   },
   {
     "type": "separator"
