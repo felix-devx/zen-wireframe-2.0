@@ -273,6 +273,12 @@
   background: var(--na-color-text) !important;
 }
 
+.tabbrowser-tab .tab-background::before{
+  background: rgba(0,0,0,0.2) !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
 /* unfocused tabs */
 .tabbrowser-tab {
   color: var(--na-color-text) !important;

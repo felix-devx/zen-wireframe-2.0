@@ -62,6 +62,10 @@ body > hbox {
   outline-offset: 0px !important;
 }
 
+:root[inDOMFullscreen="true"] #browser {
+  border: 0 !important;
+}
+
 /* Ensure all browser elements have squared corners */
 :root #browser,
 :root #browser *,
