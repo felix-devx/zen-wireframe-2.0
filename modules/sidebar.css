@@ -5,17 +5,23 @@
 @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
   :root[zen-sidebar-expanded="true"] {
     /* hide bottom navbar on expanded single-toolbar mode */
-    #zen-appcontent-navbar-container {
+    #zen-appcontent-navbar-wrapper {
       opacity: 0 !important;
-      margin-block: -4px !important;
+      margin-block: -5px !important;
       transition: margin-block var(--na-anim-duration) normal !important;
     }
 
-    :has(#customization-content-container:hover),
+    :has(#customization-content-wrapper:hover),
     :has(toolbarpaletteitem:active),
-    :has(#zen-appcontent-navbar-container:hover) #zen-appcontent-navbar-container {
+    :has(#zen-appcontent-navbar-wrapper:hover) #zen-appcontent-navbar-wrapper {
       opacity: 1 !important;
       margin-block: 0px !important;
+    }
+    
+    :has(#customization-content-wrapper:hover),
+    :has(toolbarpaletteitem:active),
+    :has(#zen-appcontent-navbar-wrapper:hover) #zen-tabbox-wrapper {
+      margin-bottom: 0 !important;
     }
 
     /* auto hide top sidebar toolbar except menu button */
@@ -82,6 +88,13 @@
       #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
         margin-left: 0px !important;
       }
+      
+      /* remove navbar wrapper on single toolbar fix */
+      @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
+        #zen-appcontent-navbar-wrapper{
+          display: none !important;
+        }
+      }
     }
   
     :root[zen-right-side="true"][zen-sidebar-expanded="true"][zen-compact-mode="true"] {
@@ -105,6 +118,13 @@
   
       #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
         margin-right: 0px !important;
+      }
+      
+      /* remove navbar wrapper on single toolbar fix */
+      @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
+        #zen-appcontent-navbar-wrapper{
+          display: none !important;
+        }
       }
     }
 }
@@ -153,11 +173,19 @@
   margin: 0px !important;
 }
 
-:root[zen-compact-mode="true"] #navigator-toolbox {
-  height: calc(100% - 48px) !important;
-  align-self: center !important;
-  margin-top: 0px !important;
-  
+/* reduced height of floating sidebar for multiple/collapse toolbar */
+@media not (-moz-bool-pref: "zen.view.use-single-toolbar"){
+  :root[zen-compact-mode="true"] #navigator-toolbox {
+    height: calc(100% - 48px) !important;
+    align-self: center !important;
+    margin-top: 0px !important;  
+  }
+}
+
+@media (-moz-bool-pref: "zen.view.use-single-toolbar"){
+  :root[zen-compact-mode="true"] #navigator-toolbox {
+    margin-top: 10px !important;
+  }
 }
 
 :root:not([zen-sidebar-expanded="true"]):not([zen-compact-mode="true"]) #navigator-toolbox {
@@ -193,14 +221,14 @@
 
 /* expanded docked sidebar LEFT side mode */
 :root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
-  margin-left: 8px !important;
+  margin-left: 16px !important;
   margin-bottom: 32px !important;
   margin-top: 6px !important;
 }
 
 /* expanded docked sidebar RIGHT side mode */
 :root[zen-right-side][zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
-  margin-right: 8px !important;
+  margin-right: 16px !important;
   margin-bottom: 32px !important;
   margin-top: 6px !important;
 }
@@ -219,13 +247,13 @@
 }
 
 :root:not([zen-right-side])[zen-compact-mode="true"] #titlebar{
-  margin-left: 8px !important;
+  margin-left: 16px !important;
   margin-bottom: 32px !important;
   margin-top: 6px !important;
 }
 
 :root[zen-right-side][zen-compact-mode="true"] #titlebar{
-  margin-left: 8px !important;
+  margin-right: 16px !important;
   margin-bottom: 32px !important;
   margin-top: 6px !important;
 }
