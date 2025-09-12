@@ -237,7 +237,7 @@
   padding-inline: 6px !important;
 }
 
-@media (-moz-pref("zen.view.use-single-toolbar")) {
+@media (-moz-bool-pref("zen.view.use-single-toolbar")) {
   :root[zen-sidebar-expanded="true"] .urlbar-page-action,
   :root[zen-sidebar-expanded="true"] #tracking-protection-icon-container {
     margin-left: 0px !important;

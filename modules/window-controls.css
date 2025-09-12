@@ -1,5 +1,5 @@
 /* ------------------ */
-@media not (-moz-pref(wireframe.macos.controls")){
+@media not (-moz-pref: "wireframe.macos.controls"){
   /* minimize, maximize, and close button */
   .titlebar-buttonbox {
     margin-right: -2px !important;
@@ -115,8 +115,8 @@
 }
 
 
-@media (-moz-pref("zen.view.experimental-force-window-controls-left")){
-  @media not (-moz-pref("wireframe.macos.controls")){
+@media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
+  @media not (-moz-bool-pref: "wireframe.macos.controls"){
   .titlebar-close {
     content: none !important;
     order: -1 !important;
