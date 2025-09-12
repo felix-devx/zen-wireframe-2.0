@@ -88,13 +88,6 @@
       #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
         margin-left: 0px !important;
       }
-      
-      /* remove navbar wrapper on single toolbar fix */
-      @media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
-        #zen-appcontent-navbar-wrapper{
-          display: none !important;
-        }
-      }
     }
   
     :root[zen-right-side="true"][zen-sidebar-expanded="true"][zen-compact-mode="true"] {
@@ -118,13 +111,6 @@
   
       #navigator-toolbox:has(#urlbar[open]:not([zen-floating-urlbar="true"])) #urlbar {
         margin-right: 0px !important;
-      }
-      
-      /* remove navbar wrapper on single toolbar fix */
-      @media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
-        #zen-appcontent-navbar-wrapper{
-          display: none !important;
-        }
       }
     }
 }
