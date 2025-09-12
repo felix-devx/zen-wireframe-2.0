@@ -1,6 +1,17 @@
 /* ------------------ */
 @media not (-moz-bool-pref: "wireframe.macos.controls"){
   /* minimize, maximize, and close button */
+  @media -moz-pref("zen.tabs.vertical") {
+  :root:not([zen-window-buttons-reversed="true"]) {
+    &:root[zen-right-side="true"] #zen-sidebar-top-buttons .titlebar-buttonbox-container {
+      margin-right: calc(-1 * var(--zen-toolbox-padding));
+      margin-top: 0px !important;;
+      height: calc(4px + var(--zen-toolbar-height)) !important;
+    }
+  }
+}
+  
+  
   .titlebar-buttonbox {
     margin-right: -2px !important;
     margin-left: -4px !important;
