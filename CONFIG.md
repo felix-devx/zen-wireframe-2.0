@@ -15,6 +15,7 @@ This theme implements customizable preferences using Zen Browser's preference sy
 4. `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
 5. `wireframe.macos.controls` - Disable macOS style window controls
 6. `zen.view.experimental-force-window-controls-left` - Force window controls to the left (for macOS style controls only)
+7. `wireframe.blank.theme` - Switch to light mode for about:blank
 
 ### Dropdown Preferences
 
