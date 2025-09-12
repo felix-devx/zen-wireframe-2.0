@@ -16,7 +16,7 @@
 }
 
 @-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
-  @media (prefers-color-scheme: light) {
+  /* @media (prefers-color-scheme: light) {
     :root {
       --na-color-text: rgba(30, 31, 0, 1);
       --na-color-bg: rgba(239, 233, 217, 0.6);
@@ -28,10 +28,24 @@
       --na-color-text: rgba(209, 207, 192, 1);
       --na-color-bg: rgba(30, 30, 31, 0.6);
     }
+  } */
+
+  @media not (-moz-pref("wireframe.blank.theme")) {
+    :root {
+      --na-color-text: rgba(209, 207, 192, 1);
+      --na-color-bg: rgba(30, 30, 31, 0.6);
+    }
+  }
+
+  @media (-moz-pref("wireframe.blank.theme")) {
+    :root {
+      --na-color-text: rgba(30, 31, 0, 1);
+      --na-color-bg: rgba(239, 233, 217, 0.6);
+    }
   }
 }
 
-@-moz-document url("about:newtab"), url("about:blank"), url("about:home"), url("about:privatebrowsing") {
+@-moz-document url("about:newtab"), url("about:blank"), url("about:privatebrowsing") {
 
   html, body {
     overflow: hidden !important;
@@ -44,7 +58,7 @@
     display: none;
   }
 
-  body:before {
+  body::before {
     font-weight: 500;
     position: absolute;
     margin: auto;

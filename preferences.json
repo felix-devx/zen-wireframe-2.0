@@ -1,48 +1,33 @@
 [
   {
     "type": "text",
-    "label": "⚙️ Wireframe Theme Settings",
+    "label": "Wireframe 2.0 Theme Settings",
     "margin": "20px 0 25px 0",
     "size": "29px"
   },
   {
     "type": "text",
-    "label": "📘 Note",
+    "label": "Note",
     "margin": "30px 0 30px 0",
     "size": "25px"
   },
   {
     "type": "text",
-    "label": " ⚠️ 1.) Disabling animations may improve performance but reduce visual feedback.",
+    "label": "1.) Disabling animations may improve performance but reduce visual feedback.",
     "size": "18px",
     "margin": "0 0 15px 0"
   },
   {
     "type": "text",
-    "label": " 🎨 2.) Color scheme changes require a browser restart to take effect.",
+    "label": "2.) Color scheme and window control changes may require a browser restart to take effect.",
     "size": "18px",
     "margin": "0 0 15px 0"
   },
   {
     "type": "text",
-    "label": "🔧 Core Theme Settings",
+    "label": "Core Theme Settings",
     "margin": "30px 0 30px 0",
     "size": "25px"
-  },
-  {
-    "property": "wireframe.animations.enabled",
-    "label": "Enable animations in Wireframe theme",
-    "default": false,
-    "type": "checkbox"
-  },
-  {
-    "type": "separator"
-  },
-  {
-    "property": "wireframe.borders.squared",
-    "label": "Use squared borders",
-    "default": true,
-    "type": "checkbox"
   },
   {
     "type": "separator"
@@ -69,8 +54,8 @@
   },
   {
     "type": "checkbox",
-    "property": "zen.view.experimental-force-window-controls-left",
-    "label": "Force window controls to the left (for macOS style controls only)",
+    "property": "wireframe.blank.theme",
+    "label": "Switch to light mode for about:blank",
     "value": "boolean",
     "default": true
   },
@@ -78,25 +63,11 @@
     "type": "separator"
   },
   {
-    "type": "dropdown",
-    "property": "wireframe.color_scheme",
-    "label": "Color scheme",
-    "value": "string",
-    "default": "system",
-    "options": [
-      {
-        "value": "light",
-        "label": "Light"
-      },
-      {
-        "value": "dark",
-        "label": "Dark"
-      },
-      {
-        "value": "system",
-        "label": "System"
-      }
-    ]
+    "type": "checkbox",
+    "property": "zen.view.experimental-force-window-controls-left",
+    "label": "Force window controls to the left (for macOS style controls only)",
+    "value": "boolean",
+    "default": true
   },
   {
     "type": "separator"
