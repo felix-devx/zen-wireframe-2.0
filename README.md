@@ -48,7 +48,7 @@ The theme includes several customizable preferences that can be adjusted through
 - `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
 - `wireframe.macos.controls` - Disable macOS style window controls
 - `zen.view.experimental-force-window-controls-left` - Force window controls to the left (for macOS style controls only)
-
+- `wireframe.blank.theme` - Switch to light mode for about:blank
 
 ## Contributing
 
