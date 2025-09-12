@@ -168,7 +168,7 @@
   }
 }
 
-@media (-moz-pref: "zen.view.use-single-toolbar"){
+@media (-moz-pref("zen.view.use-single-toolbar")){
   :root[zen-compact-mode="true"] #navigator-toolbox {
     margin-top: 10px !important;
   }

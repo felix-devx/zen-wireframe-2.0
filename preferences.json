@@ -57,7 +57,7 @@
     "property": "wireframe.blank.theme",
     "label": "Switch to light mode for about:blank",
     "value": "boolean",
-    "default": true
+    "default": false
   },
   {
     "type": "separator"

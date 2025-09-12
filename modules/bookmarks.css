@@ -47,3 +47,15 @@
   animation: slideFromLeft var(--na-anim-duration) ease !important;
   left: 10px;
 }
+
+/* @-moz-document url("chrome://global/content/pictureinpicture/player.xhtml") {
+  html, .player-holder {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background: none !important;
+    content: "";
+  }
+  .player-holder {
+    clip-path: none !important;
+  }
+} */
