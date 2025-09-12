@@ -1,5 +1,5 @@
 /* ------------------ */
-@media not (-moz-pref: "wireframe.macos.controls"){
+@media not (-moz-bool-pref: "wireframe.macos.controls"){
   /* minimize, maximize, and close button */
   .titlebar-buttonbox {
     margin-right: -2px !important;
