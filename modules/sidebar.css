@@ -2,7 +2,7 @@
 
 /* === SIDEBAR - SINGLE TOOLBAR === */
 
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-pref: "zen.view.use-single-toolbar") {
   :root[zen-sidebar-expanded="true"] {
     /* hide bottom navbar on expanded single-toolbar mode */
     #zen-appcontent-navbar-wrapper {
@@ -160,7 +160,7 @@
 }
 
 /* reduced height of floating sidebar for multiple/collapse toolbar */
-@media not (-moz-bool-pref: "zen.view.use-single-toolbar"){
+@media not (-moz-pref: "zen.view.use-single-toolbar"){
   :root[zen-compact-mode="true"] #navigator-toolbox {
     height: calc(100% - 48px) !important;
     align-self: center !important;
@@ -168,7 +168,7 @@
   }
 }
 
-@media (-moz-bool-pref: "zen.view.use-single-toolbar"){
+@media (-moz-pref: "zen.view.use-single-toolbar"){
   :root[zen-compact-mode="true"] #navigator-toolbox {
     margin-top: 10px !important;
   }

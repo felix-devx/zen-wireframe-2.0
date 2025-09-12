@@ -107,7 +107,7 @@ body > hbox {
 }
 
 /* content window bottom margin on SINGLE-TOOLBAR mode */
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-pref: "zen.view.use-single-toolbar") {
   :root[zen-sidebar-expanded="true"]:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
     margin-bottom: var(--na-window-margin) !important;
   }
@@ -139,7 +139,7 @@ body > hbox {
   border-radius: var(--na-user-border-radius) !important;
 }
 
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-pref: "zen.view.use-single-toolbar") {
   :root:has(#tabbrowser-tabpanels [zen-split])[zen-compact-mode="true"][zen-sidebar-expanded="true"] #zen-tabbox-wrapper {
     margin: var(--na-window-margin) !important;
  }
@@ -151,7 +151,7 @@ body > hbox {
  }
 }
 
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-pref: "zen.view.use-single-toolbar") {
   :root:has(#tabbrowser-tabpanels [zen-split])[zen-compact-mode="true"] #zen-tabbox-wrapper {
     margin: var(--na-window-margin) !important;
   }

@@ -237,7 +237,7 @@
   padding-inline: 6px !important;
 }
 
-@media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+@media (-moz-pref: "zen.view.use-single-toolbar") {
   :root[zen-sidebar-expanded="true"] .urlbar-page-action,
   :root[zen-sidebar-expanded="true"] #tracking-protection-icon-container {
     margin-left: 0px !important;
@@ -248,14 +248,14 @@
 }
 
 /* URL bar position preference - TOP */
-@media (-moz-bool-pref: "wireframe.urlbar.position.top") {
+@media (-moz-pref: "wireframe.urlbar.position.top") {
   #zen-appcontent-wrapper {
     flex-direction: column;
   }
 }
 
 /* URL bar position preference - BOTTOM (default) */
-@media not (-moz-bool-pref: "wireframe.urlbar.position.top") {
+@media not (-moz-pref: "wireframe.urlbar.position.top") {
   #zen-appcontent-wrapper {
     flex-direction: column-reverse;
   }
