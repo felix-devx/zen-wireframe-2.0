@@ -125,9 +125,7 @@
   }
 }
 
-
-@media (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
-  @media not (-moz-bool-pref: "wireframe.macos.controls"){
+@media not (-moz-bool-pref: "wireframe.controls.reverse"){
   .titlebar-close {
     content: none !important;
     order: -1 !important;
@@ -148,6 +146,5 @@
   .titlebar-max,
   .titlebar-close {
     margin-right: 5px !important;
-  }
   }
 }
