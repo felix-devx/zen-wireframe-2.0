@@ -34,19 +34,13 @@ window,
   border-radius: 0px !important;
   -moz-appearance: none !important;
   appearance: none !important;
+  overflow: clip !important;
+  padding: 0px !important;
 }
 
 body > hbox {
   border-radius: 0px !important;
   /* background: var(--na-color-bg) !important; */
-}
-
-#browser {
-  overflow: clip !important;
-  /* background: var(--na-color-zero) !important; */
-  border-radius: 0px !important;
-/*   margin: 0px !important; */
-  padding: 0px !important;
 }
 
 /* window border on maximize */
@@ -57,7 +51,7 @@ body > hbox {
 /* window border on minimize */
 :root:not([sizemode="maximized"]) #browser {
   border: 2px solid var(--na-color-border) !important;
-  border-radius: 0px !important;
+  border-radius: var(--na-window-border-radius) !important;
   outline: none !important;
   outline-offset: 0px !important;
 }
@@ -162,7 +156,7 @@ body > hbox {
   margin: 0px !important;
 }
 
-/* User-defined border radius preferences */
+/* Webview Border Radius Pref */
 @media (-moz-pref("wireframe.webview.border_radius", 0)) {
   :root {
     --na-user-border-radius: 0px;
@@ -196,5 +190,48 @@ body > hbox {
 @media (-moz-pref("wireframe.webview.border_radius", 20)) {
   :root {
     --na-user-border-radius: 20px;
+  }
+}
+
+/* Window border radius pref */
+@media (-moz-pref("wireframe.window.border_radius", 0)) {
+  :root {
+    --na-window-border-radius: 0px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 4)) {
+  :root {
+    --na-window-border-radius: 4px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 8)) {
+  :root {
+    --na-window-border-radius: 8px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 12)) {
+  :root {
+    --na-window-border-radius: 12px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 16)) {
+  :root {
+    --na-window-border-radius: 16px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 20)) {
+  :root {
+    --na-window-border-radius: 20px;
+  }
+}
+
+@media (-moz-pref("wireframe.window.border_radius", 24)) {
+  :root {
+    --na-window-border-radius: 24px;
   }
 }
