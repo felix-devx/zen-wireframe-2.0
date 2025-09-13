@@ -55,7 +55,7 @@
   {
     "type": "checkbox",
     "property": "wireframe.controls.reverse",
-    "label": "Disable window border radius",
+    "label": "Reverse window controls",
     "value": "boolean",
     "default": false
   },
