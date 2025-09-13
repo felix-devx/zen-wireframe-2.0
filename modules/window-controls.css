@@ -126,8 +126,21 @@
 }
 
 @media not (-moz-bool-pref: "wireframe.controls.reverse"){
-  .titlebar-close {
+  
+  @media not (-moz-bool-pref: "wireframe.macos.controls"){
+   .titlebar-close{ 
     content: none !important;
+   }
+    
+      /* Specific styling for individual buttons */
+    .titlebar-min,
+    .titlebar-max,
+    .titlebar-close {
+      margin-right: 5px !important;
+    }
+  }
+  
+  .titlebar-close {
     order: -1 !important;
   }
 
@@ -139,12 +152,5 @@
   .titlebar-buttonbox-container {
     order: -1 !important;
     margin-left: 8px !important;
-  }
-
-  /* Specific styling for individual buttons */
-  .titlebar-min,
-  .titlebar-max,
-  .titlebar-close {
-    margin-right: 5px !important;
   }
 }
