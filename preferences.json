@@ -54,6 +54,16 @@
   },
   {
     "type": "checkbox",
+    "property": "wireframe.controls.reverse",
+    "label": "Disable window border radius",
+    "value": "boolean",
+    "default": false
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "checkbox",
     "property": "wireframe.compact.siderbar.transparent",
     "label": "Make sidebar transparent in compact mode",
     "value": "boolean",
@@ -128,5 +138,42 @@
   },
   {
     "type": "separator"
+  },
+  {
+    "type": "dropdown",
+    "property": "wireframe.window.border_radius",
+    "label": "Border radius for window",
+    "value": "number",
+    "default": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "0px"
+      },
+      {
+        "value": 4,
+        "label": "4px"
+      },
+      {
+        "value": 8,
+        "label": "8px"
+      },
+      {
+        "value": 12,
+        "label": "12px"
+      },
+      {
+        "value": 16,
+        "label": "16px"
+      },
+      {
+        "value": 20,
+        "label": "20px"
+      },
+      {
+        "value": 24,
+        "label": "24px"
+      }
+    ]
   }
 ]
