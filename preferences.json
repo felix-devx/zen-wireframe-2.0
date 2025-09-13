@@ -54,13 +54,10 @@
   },
   {
     "type": "checkbox",
-    "property": "wireframe.blank.theme",
-    "label": "Switch to light mode for about:blank",
+    "property": "wireframe.compact.siderbar.transparent",
+    "label": "Make sidebar transparent in compact mode",
     "value": "boolean",
     "default": false
-  },
-  {
-    "type": "separator"
   },
   {
     "type": "checkbox",
@@ -68,6 +65,30 @@
     "label": "Force window controls to the left (for macOS style controls only)",
     "value": "boolean",
     "default": true
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "dropdown",
+    "property": "wireframe.blank.theme",
+    "label": "Change color scheme for about:blank",
+    "value": "number",
+    "default": 0,
+    "options": [
+      {
+        "value": 0,
+        "label": "Dark Tint"
+      },
+      {
+        "value": 1,
+        "label": "Light Tint"
+      },
+      {
+        "value": 2,
+        "label": "Transparent"
+      }
+    ]
   },
   {
     "type": "separator"

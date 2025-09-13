@@ -30,17 +30,24 @@
     }
   } */
 
-  @media not (-moz-pref("wireframe.blank.theme")) {
+  @media (-moz-pref("wireframe.blank.theme", 0)) {
     :root {
       --na-color-text: rgba(209, 207, 192, 1);
       --na-color-bg: rgba(30, 30, 31, 0.6);
     }
   }
 
-  @media (-moz-pref("wireframe.blank.theme")) {
+  @media (-moz-pref("wireframe.blank.theme", 1)) {
     :root {
       --na-color-text: rgba(30, 31, 0, 1);
       --na-color-bg: rgba(239, 233, 217, 0.6);
+    }
+  }
+
+  @media (-moz-pref("wireframe.blank.theme", 2)) {
+    :root {
+      --na-color-text: rgba(209, 207, 192, 1);
+      --na-color-bg: rgba(30, 30, 31, 0);
     }
   }
 }
