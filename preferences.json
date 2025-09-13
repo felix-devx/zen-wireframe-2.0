@@ -70,6 +70,9 @@
     "default": false
   },
   {
+    "type": "separator"
+  },
+  {
     "type": "checkbox",
     "property": "zen.view.experimental-force-window-controls-left",
     "label": "Force window controls to the left (for macOS style controls only)",
