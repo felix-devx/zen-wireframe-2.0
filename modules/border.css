@@ -58,6 +58,9 @@ body > hbox {
 
 :root[inDOMFullscreen="true"] #browser {
   border: 0 !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  outline-offset: 0px !important;
 }
 
 /* Ensure all browser elements have squared corners */
