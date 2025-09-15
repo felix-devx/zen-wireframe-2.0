@@ -264,14 +264,14 @@
     margin-top: var(--na-window-margin) !important;
     margin-left: var(--na-window-margin) !important;
     margin-right: 0 !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
   }
 
   :root:not([zen-right-side="true"]):not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]) #zen-tabbox-wrapper {
     margin-top: var(--na-window-margin) !important;
     margin-left: 0 !important;
     margin-right: var(--na-window-margin) !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
   }
 }
 
