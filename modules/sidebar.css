@@ -2,8 +2,53 @@
 
 /* === SIDEBAR - SINGLE TOOLBAR === */
 
+/* expanded docked sidebar LEFT side mode */
+:root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+  margin-left: 16px !important;
+  margin-bottom: 32px !important;
+  margin-top: 6px !important;
+}
+
+@media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
+  :root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+    margin-left: 16px !important;
+    margin-bottom: 6px !important;
+    margin-top: 32px !important;
+  }
+}
+
+  /* expanded docked sidebar RIGHT side mode */
+  :root[zen-right-side][zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+    margin-right: 16px !important;
+    margin-bottom: 32px !important;
+    margin-top: 6px !important;
+  }
+
+@media not (-moz-bool-pref: "zen.view.experimental-force-window-controls-left"){
+  :root[zen-right-side][zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+    margin-right: 16px !important;
+    margin-bottom: 32px !important;
+    margin-top: 6px !important;
+  }
+}
+
+@media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
+  /* expanded docked sidebar LEFT side mode */
+  :root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+    margin-left: 16px !important;
+    margin-bottom: 32px !important;
+    margin-top: 6px !important;
+  }
+
+  /* expanded docked sidebar RIGHT side mode */
+  :root[zen-right-side][zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
+    margin-right: 16px !important;
+    margin-bottom: 32px !important;
+    margin-top: 6px !important;
+  }
+}
+
 @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
-  
   @media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
     #zen-appcontent-navbar-wrapper::before {
       content: "";
@@ -13,13 +58,13 @@
       bottom: -10px;
       height: 40px; /* ← increases hover hitbox */   
     }
-    
+  }
+  
     :root[zen-compact-mode="true"]:not([inDOMFullscreen="true"]) #zen-appcontent-navbar-wrapper {
       /*padding-block: 10px !important; */
       margin-block: -5px !important;  
       transition: margin-block var(--na-anim-duration) ease !important;
     }
-  }
   
   @media (-moz-bool-pref: "wireframe.urlbar.position.top"){
     #zen-appcontent-navbar-wrapper::before {
@@ -79,12 +124,15 @@
     :has(#zen-sidebar-top-buttons:hover) #zen-sidebar-top-buttons-customization-target>* {
       opacity: 1 !important;
     } */
-
-    /* move sidebar navbar to bottom */
+  
+  @media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
     #nav-bar {
       order: 1 !important;
       margin-bottom: 10px !important;
     }
+  }
+
+    /* move sidebar navbar to bottom */
 
     [zen-compact-mode="true"] {
       /* sidebar margin on single-toolbar mode */
@@ -261,6 +309,7 @@
   margin-bottom: 6px !important;
 }
 
+@media not (-moz-bool-pref: "zen.view.use-single-toolbar") {
   /* expanded docked sidebar LEFT side mode */
   :root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
     margin-left: 16px !important;
@@ -274,6 +323,7 @@
     margin-bottom: 6px !important;
     margin-top: 32px !important;
   }
+}
 
 @media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
   /* expanded docked sidebar LEFT side mode */
@@ -304,6 +354,7 @@
   border-radius: var(--na-user-border-radius) !important;
 }
 
+@media not (-moz-bool-pref: "zen.view.use-single-toolbar") {
   :root:not([zen-right-side])[zen-compact-mode="true"] #titlebar{
     margin-left: 16px !important;
     margin-bottom: 6px !important;
@@ -315,6 +366,7 @@
     margin-bottom: 6px !important;
     margin-top: 32px !important;
   }
+}
 
 @media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
   :root:not([zen-right-side])[zen-compact-mode="true"] #titlebar{
@@ -334,9 +386,14 @@
 #titlebar {
   /* background: var(--na-color-bg) !important; */
 /*   padding-inline: 0px !important; */
-  padding-top: 10px !important;
   padding-bottom: 3px !important;
   border-radius: var(--na-user-border-radius) !important;
+}
+
+@media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
+  #titlebar{
+    padding-top: 10px !important;
+  }
 }
 
 :root[zen-compact-mode="true"] #titlebar {
