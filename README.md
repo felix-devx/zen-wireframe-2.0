@@ -2,7 +2,8 @@
 
 A minimal, squared-off theme for Zen Browser that focuses on clean lines and efficient use of space.
 
-<img width="1919" height="1079" alt="Screenshot 2025-09-09 235105" src="https://github.com/user-attachments/assets/4f83cbe9-b560-4431-b920-af76860a9bc9" />
+<img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/ed962d1b-1e78-4235-932c-2c13fb5ede67" />
+<img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/32bd38ae-1bed-44b9-b14b-76fc647a5ecd" />
 
 ## Features
 
@@ -13,7 +14,13 @@ A minimal, squared-off theme for Zen Browser that focuses on clean lines and eff
 
 ## Installation
 
-1. Download the theme files
+### Method 1: Using Sine (Recommended)
+1. Install [sine](https://github.com/CosmoCreeper/Sine) if you haven't.
+2. Head to the sine marketplace, search or browse through to find Wireframe 2.0.
+3. Click install.
+Note: To changes mods settings, head to sine mods tab in settings and click on the gear icon under wireframe 2.0 in the installed mods section below marketplace.
+### Method 2:
+1. Download chrome.zip from the latest release or download the files of the repo.
 2. Place them in your Zen Browser profile's chrome folder
 3. Restart Zen Browser
 
