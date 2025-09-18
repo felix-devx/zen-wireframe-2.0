@@ -64,6 +64,16 @@
   },
   {
     "type": "checkbox",
+    "property": "wireframe.toolbar.hide",
+    "label": "Auto hide toolbar buttons (Reveal on hover)",
+    "value": "boolean",
+    "default": false
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "checkbox",
     "property": "wireframe.compact.siderbar.transparent",
     "label": "Make sidebar transparent in compact mode",
     "value": "boolean",
@@ -102,6 +112,16 @@
         "label": "Transparent"
       }
     ]
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "checkbox",
+    "property": "wireframe.blank.content",
+    "label": "Remove logo from about:blank",
+    "value": "boolean",
+    "default": false
   },
   {
     "type": "separator"
