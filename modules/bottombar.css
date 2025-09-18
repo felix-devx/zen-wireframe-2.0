@@ -12,38 +12,39 @@
   border-color: var(--na-color-border) !important;
   margin-left: 0px !important;
   margin-right: 10px !important;
+  padding-inline: 10px !important;
   transition: padding-inline 0.3s normal;
   order: 1 !important;
 }
 
 /* hide bottombar elements */
-#zen-appcontent-navbar-container #identity-box {
-  visibility: visible !important;
+@media (-moz-pref("wireframe.toolbar.hidden")){
+  #zen-appcontent-navbar-container #identity-box {
+  visibility: collapse !important;
 }
 
 #zen-appcontent-navbar-container #page-action-buttons {
-  visibility: visible !important;
+  visibility: collapse !important;
 }
 
 #zen-appcontent-navbar-container #tracking-protection-icon-container {
-  visibility: visible !important;
+  visibility: collapse !important;
 }
 
 #zen-appcontent-navbar-container .toolbarbutton-1 {
-  visibility: visible !important;
+  visibility: collapse !important;
 }
 
 /* show bottombar elements on hover */
-/* :root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
+:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
 :root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container {
-  margin-left: 10px !important;
   padding-inline: 0px !important;
-} */
+}
 
 :root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
 :root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
@@ -83,6 +84,8 @@
 :root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
 :root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1 {
   visibility: visible !important;
+}
+
 }
 
 /* bottombar background transparent for expanded urlbar */
@@ -170,7 +173,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--zen-primary-color), var(--na-color-border));
+  background: linear-gradient(90deg, transparent, var(--na-color-border));
   background-size: 200% 100%;
   animation: urlbar-loading 1s linear reverse infinite;
   animation-play-state: paused;
