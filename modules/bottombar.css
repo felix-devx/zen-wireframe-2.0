@@ -18,7 +18,7 @@
 }
 
 /* hide bottombar elements */
-@media (-moz-pref("wireframe.toolbar.hidden")){
+@media (-moz-pref("wireframe.toolbar.hide")){
   #zen-appcontent-navbar-container #identity-box {
   visibility: collapse !important;
 }
