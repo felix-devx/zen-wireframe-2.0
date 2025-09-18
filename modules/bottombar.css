@@ -18,75 +18,39 @@
 }
 
 /* hide bottombar elements */
-@media (-moz-pref("wireframe.toolbar.hide")){
-  #zen-appcontent-navbar-container #identity-box {
-  visibility: collapse !important;
+/* hide bottombar elements */
+@media (-moz-pref("wireframe.toolbar.hide")) {
+  #zen-appcontent-navbar-container #identity-box,
+  #zen-appcontent-navbar-container #page-action-buttons,
+  #zen-appcontent-navbar-container #tracking-protection-icon-container,
+  #zen-appcontent-navbar-container .toolbarbutton-1 {
+    visibility: collapse !important;
+  }
+
+  /* Define the triggers that should reveal elements */
+  :root:not(:has(.tabbrowser-tab[selected][busy])):is(
+    :has(#customization-content-container:hover),
+    :has(toolbarpaletteitem:active),
+    :has(.anchor-root[open]),
+    :has(.urlbar-page-action[open]),
+    :has(#unified-extensions-button[open]),
+    :has(#zen-appcontent-navbar-container:hover),
+    :has(#zen-appcontent-navbar-container[has-popup-menu]),
+    :has(panelmultiview > .panel-viewcontainer[panelopen="true"]) /* <<< FIX */
+  ) {
+    #zen-appcontent-navbar-container {
+      padding-inline: 0px !important;
+    }
+
+    #zen-appcontent-navbar-container #identity-box,
+    #zen-appcontent-navbar-container #page-action-buttons,
+    #zen-appcontent-navbar-container #tracking-protection-icon-container,
+    #zen-appcontent-navbar-container .toolbarbutton-1 {
+      visibility: visible !important;
+    }
+  }
 }
 
-#zen-appcontent-navbar-container #page-action-buttons {
-  visibility: collapse !important;
-}
-
-#zen-appcontent-navbar-container #tracking-protection-icon-container {
-  visibility: collapse !important;
-}
-
-#zen-appcontent-navbar-container .toolbarbutton-1 {
-  visibility: collapse !important;
-}
-
-/* show bottombar elements on hover */
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container,
-:root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container {
-  padding-inline: 0px !important;
-}
-
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box,
-:root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #identity-box {
-  visibility: visible !important;
-}
-
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons,
-:root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #page-action-buttons {
-  visibility: visible !important;
-}
-
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container,
-:root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container #tracking-protection-icon-container {
-  visibility: visible !important;
-}
-
-:root:has(#customization-content-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(toolbarpaletteitem:active):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(.anchor-root[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(.urlbar-page-action[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(#unified-extensions-button[open]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(#zen-appcontent-navbar-container:hover):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1,
-:root:has(#zen-appcontent-navbar-container[has-popup-menu]):root:not(:has(.tabbrowser-tab[selected][busy])) #zen-appcontent-navbar-container .toolbarbutton-1 {
-  visibility: visible !important;
-}
-
-}
 
 /* bottombar background transparent for expanded urlbar */
 #urlbar-background,
