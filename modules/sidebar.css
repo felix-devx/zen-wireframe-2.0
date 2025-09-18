@@ -120,14 +120,16 @@
     }
 
     /* auto hide top sidebar toolbar except menu button */
-    /* #zen-sidebar-top-buttons>#zen-sidebar-top-buttons-customization-target>*:nth-child(n+2) {
+  @media (-moz-pref("wireframe.toolbar.hide")){
+    #zen-sidebar-top-buttons>#zen-sidebar-top-buttons-customization-target>*:nth-child(n+2) {
       opacity: 0 !important;
       transition: opacity var(--na-anim-duration) normal !important;
     }
 
     :has(#zen-sidebar-top-buttons:hover) #zen-sidebar-top-buttons-customization-target>* {
       opacity: 1 !important;
-    } */
+    }
+  }
   
   @media not (-moz-bool-pref: "wireframe.urlbar.position.top"){
     #nav-bar {
