@@ -2,6 +2,10 @@
 
 /* === SIDEBAR - SINGLE TOOLBAR === */
 
+#titlebar:before{
+  border-radius: var(--na-user-border-radius) !important;
+}
+
 /* expanded docked sidebar LEFT side mode */
 :root:not([zen-right-side])[zen-sidebar-expanded="true"][zen-compact-mode="true"] #titlebar {
   margin-left: 16px !important;
@@ -147,7 +151,7 @@
       /* move the navbar out from sidebar so url can have the same bahavior as other toolbar mode */
       #urlbar-container:has(#urlbar[open]) {
         position: fixed !important;
-        top: auto !important;
+        top:  auto !important;
         height: 40px !important;
         min-height: 40px !important;
         min-width: 100vw !important;
@@ -222,6 +226,7 @@
   right: auto !important;
   display: flex !important;
   flex-direction: column !important;
+  top: auto !important;
   bottom: 62.5px !important;
 }
 
