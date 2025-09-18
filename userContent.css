@@ -86,3 +86,11 @@
     background-position: center;
   }
 }
+
+@media (-moz-pref("wireframe.blank.content")){
+  @-moz-document url("about:newtab"), url("about:home"), url("about:blank"), url("about:privatebrowsing") {
+    body::before {
+      content: "";
+    }
+  }
+}
