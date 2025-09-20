@@ -488,3 +488,12 @@
     background: var(--zen-primary-color)  !important;
   }
 } */
+
+@media (-moz-pref("wireframe.navigation.hide")){
+  #back-button{
+    display: none !important;
+  }
+  #forward-button{
+    display: none !important;
+  }
+}
