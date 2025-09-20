@@ -489,11 +489,25 @@
   }
 } */
 
+/* Pref to disable navigation buttons */
 @media (-moz-pref("wireframe.navigation.hide")){
   #back-button{
     display: none !important;
   }
   #forward-button{
+    display: none !important;
+  }
+}
+
+/* === AUDIO INDICATOR == */
+
+.tab-audio-button {
+  color: var(--zen-primary-color) !important;
+}
+
+/* Pref for audio-indicator */
+@media (-moz-pref("wireframe.audio.indicator.disable")){
+  .tab-audio-button {
     display: none !important;
   }
 }
