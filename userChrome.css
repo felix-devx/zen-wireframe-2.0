@@ -2,6 +2,17 @@
 /* Import modular CSS files */
 
 @import url("modules/variables.css");
+
+/* Override Zen theme colors */
+:root {
+  --na-color-text: rgba(192, 180, 211, 1);
+  --na-color-bg: rgba(54, 20, 192, 1);
+  --na-color-text-second: rgba(192, 180, 211, 0.25);
+  --na-color-bg-second: rgba(54, 20, 192, 0.25);
+  --na-color-border: rgba(209, 207, 192, 1);
+  --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+}
+
 @import url("modules/animations.css");
 @import url("modules/panel.css");
 @import url("modules/sidebar.css");
