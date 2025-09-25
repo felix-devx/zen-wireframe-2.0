@@ -228,5 +228,49 @@
         "label": "24px"
       }
     ]
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "type": "dropdown",
+    "property": "wireframe.theme",
+    "label": "Theme",
+    "value": "string",
+    "default": "default",
+    "options": [
+      {
+        "value": "default",
+        "label": "Default"
+      },
+      {
+        "value": "catppuccin-latte",
+        "label": "Catppuccin Latte"
+      },
+      {
+        "value": "catppuccin-frappe",
+        "label": "Catppuccin Frappe"
+      },
+      {
+        "value": "catppuccin-macchiato",
+        "label": "Catppuccin Macchiato"
+      },
+      {
+        "value": "catppuccin-mocha",
+        "label": "Catppuccin Mocha"
+      },
+      {
+        "value": "nord",
+        "label": "Nord"
+      },
+      {
+        "value": "dracula",
+        "label": "Dracula"
+      },
+      {
+        "value": "gruvbox",
+        "label": "Gruvbox"
+      }
+    ]
   }
 ]

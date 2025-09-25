@@ -20,6 +20,7 @@ This theme implements customizable preferences using Zen Browser's preference sy
 ### Dropdown Preferences
 
 1. `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
+2. `wireframe.theme` - Change the color scheme of the browser (e.g., Catppuccin, Nord, Dracula, Gruvbox)
 
 ## How Preferences Work
 

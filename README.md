@@ -53,6 +53,7 @@ The theme includes several customizable preferences that can be adjusted through
 - `wireframe.borders.squared` - Use squared borders
 - `wireframe.urlbar.position.top` - Position URL bar at the top (for multiple and collapsed toolbar only)
 - `wireframe.webview.border-radius` - Border radius for webview (e.g., 0px, 4px, 8px, 12px)
+- `wireframe.theme` - Change the color scheme of the browser (e.g., Catppuccin, Nord, Dracula, Gruvbox)
 - `wireframe.macos.controls` - Disable macOS style window controls
 - `zen.view.experimental-force-window-controls-left` - Force window controls to the left (for macOS style controls only)
 - `wireframe.blank.theme` - Switch to light mode for about:blank

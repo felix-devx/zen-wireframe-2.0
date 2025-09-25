@@ -29,46 +29,86 @@
     --na-color-border: light-dark(rgba(0, 0, 0, 1),rgba(209, 207, 192, 1)) !important;
   }
 
-/* @media (-moz-pref("wireframe.theme", 0)) {
+/* Catppuccin Latte */
+@media (-moz-pref("wireframe.theme", "catppuccin-latte")) {
   :root {
-    --na-color-text: rgb(30, 30, 31);
-    --na-color-bg: rgba(239, 233, 217, 1);
-    --na-color-text-second: rgba(30, 31, 0.25);
-    --na-color-bg-second: rgba(239, 233, 217, 0.25);
-    --na-color-border: rgba(0, 0, 0, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #00000011, #000000FF;
- }
-
-  :root[privatebrowsingmode] {
-    --na-color-text: rgba(54, 20, 192, 1);
-    --na-color-bg: rgba(192, 180, 211, 1);
-    --na-color-text-second: rgba(54, 20, 192, 0.25);
-    --na-color-bg-second: rgba(192, 180, 211, 0.25);
-    --na-color-border: rgba(0, 0, 0, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #000011, #00011;
+    --na-color-text: #4c4f69;
+    --na-color-bg: #eff1f5;
+    --na-color-text-second: #5c5f77;
+    --na-color-bg-second: #e6e9ed;
+    --na-color-border: #dce0ee;
+    --na-urlbar-bg: #e6e9ed;
   }
 }
 
-@media (-moz-pref("wireframe.theme", 1)) {
+/* Catppuccin Frappe */
+@media (-moz-pref("wireframe.theme", "catppuccin-frappe")) {
   :root {
-    --na-color-text: rgba(209, 207, 192, 1);
-    --na-color-bg: rgba(30, 30, 31, 1);
-    --na-color-text-second: rgba(209, 207, 192, 0.25);
-    --na-color-bg-second: rgba(30, 31, 0.25);
-    --na-color-border: rgba(209, 207, 192, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
- }
-
-  :root[privatebrowsingmode] {
-    --na-color-text: rgba(192, 180, 211, 1);
-    --na-color-bg: rgba(54, 20, 192, 1);
-    --na-color-text-second: rgba(192, 180, 211, 0.25);
-    --na-color-bg-second: rgba(54, 20, 192, 0.25);
-    --na-color-border: rgba(209, 207, 192, 1);
-    --na-color-zero: rgba(0, 0, 0);
-    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+    --na-color-text: #c6d0f5;
+    --na-color-bg: #303446;
+    --na-color-text-second: #b5bfe2;
+    --na-color-bg-second: #292c3c;
+    --na-color-border: #232634;
+    --na-urlbar-bg: #292c3c;
   }
-} */
+}
+
+/* Catppuccin Macchiato */
+@media (-moz-pref("wireframe.theme", "catppuccin-macchiato")) {
+  :root {
+    --na-color-text: #cad3f5;
+    --na-color-bg: #24273a;
+    --na-color-text-second: #b8c0e0;
+    --na-color-bg-second: #1e2030;
+    --na-color-border: #181926;
+    --na-urlbar-bg: #1e2030;
+  }
+}
+
+/* Catppuccin Mocha */
+@media (-moz-pref("wireframe.theme", "catppuccin-mocha")) {
+  :root {
+    --na-color-text: #cdd6f4;
+    --na-color-bg: #1e1e2e;
+    --na-color-text-second: #bac2de;
+    --na-color-bg-second: #181825;
+    --na-color-border: #11111b;
+    --na-urlbar-bg: #181825;
+  }
+}
+
+/* Nord */
+@media (-moz-pref("wireframe.theme", "nord")) {
+  :root {
+    --na-color-text: #d8dee9;
+    --na-color-bg: #2e3440;
+    --na-color-text-second: #e5e9f0;
+    --na-color-bg-second: #3b4252;
+    --na-color-border: #4c566a;
+    --na-urlbar-bg: #3b4252;
+  }
+}
+
+/* Dracula */
+@media (-moz-pref("wireframe.theme", "dracula")) {
+  :root {
+    --na-color-text: #f8f8f2;
+    --na-color-bg: #282a36;
+    --na-color-text-second: #6272a4;
+    --na-color-bg-second: #44475a;
+    --na-color-border: #44475a;
+    --na-urlbar-bg: #44475a;
+  }
+}
+
+/* Gruvbox */
+@media (-moz-pref("wireframe.theme", "gruvbox")) {
+  :root {
+    --na-color-text: #ebdbb2;
+    --na-color-bg: #282828;
+    --na-color-text-second: #a89984;
+    --na-color-bg-second: #3c3836;
+    --na-color-border: #504945;
+    --na-urlbar-bg: #3c3836;
+  }
+}
