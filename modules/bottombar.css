@@ -61,8 +61,7 @@
 #urlbar[breakout-extend] :root:has(.urlbar-page-action[open]) #urlbar-background,
 #urlbar[breakout-extend] #urlbar-background,
 #urlbar[breakout-extend] #urlbar-container {
-  background-color: var(--zen-primary-color) !important;
-  border: 2px solid var(--na-color-border) !important;
+      background-color: var(--na-color-bg-second) !important;  border: 2px solid var(--na-color-border) !important;
 }
 
 /* urlbar border radius */

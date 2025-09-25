@@ -15,8 +15,7 @@ findbar {
   box-shadow: 4px 4px 8px 0px #00000022 !important;
   opacity: 1 !important;
   animation: slideUpExpand var(--na-anim-duration) ease;
-  background: var(--zen-primary-color) !important;
-}
+      background: var(--na-color-bg-second) !important;}
 
 
 findbar[hidden] {
@@ -49,8 +48,7 @@ findbar[hidden] {
   flex-grow: 1 !important;
   box-shadow: none !important;
   border: 0px solid !important;
-  background-color: var(--zen-primary-color) !important;
-}
+      background-color: var(--na-color-bg-second) !important;}
 
 .findbar-textbox:focus{
   outline: none !important;

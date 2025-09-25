@@ -24,7 +24,7 @@
     --na-color-text-second: rgba(192, 180, 211, 0.25);
     --na-color-bg-second: rgba(54, 20, 192, 0.25);
     --na-color-border: rgba(209, 207, 192, 1);
-    --na-color-zero: rgba(0, 0, 0);
+    --na-color-zero: rgba(0, 0, 0, 0);
     --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
     --na-color-border: light-dark(rgba(0, 0, 0, 1),rgba(209, 207, 192, 1)) !important;
   }

@@ -485,7 +485,7 @@
 
 /* @media (-moz-pref: "wireframe.compact.siderbar.transparent") {
   :root[zen-compact-mode="true"] #navigator-toolbox {
-    background: var(--zen-primary-color)  !important;
+    background: var(--na-color-bg-second) !important;
   }
 } */
 
@@ -502,8 +502,7 @@
 /* === AUDIO INDICATOR == */
 
 .tab-audio-button {
-  color: var(--zen-primary-color) !important;
-}
+      color: var(--na-color-text) !important;}
 
 /* Pref for audio-indicator */
 @media (-moz-pref("wireframe.audio.indicator.disable")){
