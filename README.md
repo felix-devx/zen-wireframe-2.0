@@ -1,3 +1,5 @@
+# INFO: THIS IS A FORK OF THE ORIGINAL WIREFRAME 2.0 THEME. 
+
 # Wireframe 2.0
 
 A minimal, squared-off theme for Zen Browser that focuses on clean lines and efficient use of space.
